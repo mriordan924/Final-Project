@@ -1,0 +1,585 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(207, 200, 189);
+  font-family: Arial, sans-serif;
+}
+
+.logo-images { 
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-images img {
+  width: 150px;
+  height: auto;
+  margin: 0 10px;
+} 
+
+/* Navbar styles */
+nav {
+  background-color: rgb(252, 234, 200);
+  color: rgb(24, 23, 23);
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(37, 33, 33);
+}
+
+/* Home page styling */
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Posts styling */
+.post-container {
+  background-color: rgb(252, 234, 200);
+  /* border: 5px solid rgb(204, 204, 204); */
+  border-radius: 8px;
+  margin: 10px;
+  padding: 15px;
+  width: 900px;
+  text-align: center;
+}
+
+.post-header {
+  display: flex;
+  flex-direction: space-between;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-fullname {
+  font-weight: bold; 
+  margin-right: 10px; 
+  font-size: xx-large;
+}
+
+.post-username {
+  color: rgb(119, 119, 119); 
+  font-size: x-large;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-image{
+  width: 500px;
+  height: auto;
+}
+
+.post-content {
+  font-size: 25px; 
+  line-height: 2; 
+  /* text-align: left;  */
+  margin-top: 10px;
+  padding: 10px; 
+  color: rgb(103, 70, 4);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+
+/* Update the post-actions styles */
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  /* flex-direction: column; */
+  /* margin-top: 10px; */
+  /* padding: 10px; */
+  width: 75%;
+}
+
+.post-actions button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.post-actions button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+/* post likes */
+.like-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.like-button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+.like-button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+.like-count {
+  font-size: 18px;
+  color: rgb(119, 119, 119);
+}
+
+/* edit post form */
+
+.edit-post-form {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.edit-post-form input {
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  height: 50px;
+}
+
+.edit-post-form button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s;
+}
+
+.edit-post-form button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+
+
+/* Comment styles */
+.comment {
+  background-color: rgb(248, 244, 237);
+  /* border: 1px solid rgb(221, 221, 221); */
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color:rgb(102, 105, 105);
+  font-size: 17px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  position: relative;
+}
+
+.comment-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.comment-like {
+  align-self: flex-end;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.comment-like button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+}
+
+.comment-like button:hover {
+  background-color: rgb (29, 110, 83);
+}
+
+.comment-like span {
+  margin-left: 5px;
+}
+
+.comment-text {
+  flex-grow: 1;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+.comment button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.comment button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+.comment-list h2 {
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: rgb(103, 70, 4);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2x;
+}
+
+/* Update the post-comment-input styles */
+.post-comment-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post-comment-input input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+
+.post-comment-input button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25%;
+  transition: background-color 0.3s;
+}
+
+.post-comment-input button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+/* Login Page */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.login-logo { 
+  margin-bottom: 20px;
+}
+
+
+.login-form h2 {
+  font-size: 45px;
+  margin-bottom: 5px;
+  color: rgb(103, 70, 4);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+}
+
+.login-form h3 {
+  font-size: 15px;
+  margin-bottom: 40px;
+  color: rgba(103, 70, 4, 0.761);
+}
+
+.login-form {
+  background-color: rgb(252, 234, 200);
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 8px;
+  /* margin: 0 auto; */
+  padding: 30px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 5px;
+}
+
+.login-form button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+.error-message {
+  color:rgb(29, 110, 83);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Profile page styles */
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-content {
+  display: flex;
+}
+
+.profile-avatar-container {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.profile-avatar {
+  width: 600px;
+  height: auto;
+  margin: 10px;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 30px;
+}
+
+.profile-info {
+  flex: 1;
+  background-color: rgb(252, 234, 200);
+  background-image: url('/public/hangers.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 40px;
+  /* max-width: 300px; */
+  text-align: center;
+  color: rgb(103, 70, 4);
+}
+
+.profile-username {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 150px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.profile-name {
+  margin: 10px;
+  font-size: 25px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.profile-bio {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-location{
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-logout {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 75px;
+}
+
+.profile-logout:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+
+
+/* CreatePostForm styles */
+.create-post-form {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 8px;
+  margin: 5px;
+  padding: 20px;
+}
+
+.content-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 40px;
+  font-size: medium;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 5px;
+}
+
+.photo-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom:10px;
+  margin-top: 10px;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 5px;
+}
+
+.create-post-form button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-post-form button:hover {
+  background-color: rgb(29, 110, 83);
+}
+
+.profile-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-posts h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+  color: rgb(103, 70, 4);
+}
+
+/* RegisterForm/ create new account styles */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.register-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  background-color: rgb(252, 234, 200);
+  border: 1 px solid rgb(103, 70, 4);
+  border-radius: 8px;
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.register-form h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: rgb(103, 70 ,4);
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(103, 70, 4);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.register-form button {
+  background-color: rgb(103, 70, 4);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.register-form button:hover {
+  background-color: rgb(29, 110, 83);;
+}
+
+
+
